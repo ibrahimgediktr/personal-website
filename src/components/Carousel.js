@@ -2,9 +2,10 @@ import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
 import styled, { keyframes } from "styled-components"
 import Image from "../assets/images/about-image.png"
-import "swiper/swiper-bundle.css"
+import "../assets/swiper/swiper-bundle.css"
 import { BsArrowLeft } from "react-icons/bs"
 import ProgressBar from "../components/ProgressBar"
+
 
 export default function Carousel() {
   return (
@@ -48,6 +49,7 @@ export default function Carousel() {
     </Swiper>
   )
 }
+
 
 const skimmy = keyframes`
     0%  {

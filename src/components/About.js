@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import Carousel from "../components/Carousel"
 
-function About() {
+function About({id}) {
   return (
-    <SectionContainer>
+    <SectionContainer id={id}>
       <Carousel />
     </SectionContainer>
   )

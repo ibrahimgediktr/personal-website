@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import Form from "../components/Form"
 
-function Contact() {
+function Contact({id}) {
   return (
-    <ContactContainer>
+    <ContactContainer id={id}>
       <ContactHeading>Contact</ContactHeading>
       <ContactContent>
         <Form />

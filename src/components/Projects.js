@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { Button } from "./styles/Button"
 
-function Projects() {
+function Projects({id}) {
   const data = useStaticQuery(graphql`
     query ProjectsQuery {
       allProjectsJson {
@@ -51,7 +51,7 @@ function Projects() {
   }
 
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id={id}>
       <ProjectsHeading>Projects</ProjectsHeading>
       <ProjectsWrapper>{getProjects(data)}</ProjectsWrapper>
     </ProjectsContainer>

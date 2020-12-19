@@ -1,15 +1,15 @@
 export const menuData = [
     {
       title: "About",
-      link: "/about"
+      link: "/#about"
     },
     {
       title: "Project",
-      link: "/projects"
+      link: "/#projects"
     },
     {
       title: "Contact",
-      link: "/contact"
+      link: "/#contact"
     }
   ]
   
