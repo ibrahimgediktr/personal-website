@@ -1,0 +1,21 @@
+[
+    {
+      "img": "../assets/images/spotify-project.jpg",
+      "alt": "Spotify Website Clone",
+      "name": "Spotify Website Clone",
+      "button": "View Project"
+    },
+    {
+      "img": "../assets/images/room-homapage-master.png",
+      "alt": "Room Homepage Master",
+      "name": "Frontend Mentor Challenge",
+      "button": "View Project"
+    },
+    {
+      "img": "../assets/images/sokaga-cikabilirmiyim.png",
+      "alt": "Sokağa Çıkabilir miyim ?",
+      "name": "Sokağa Çıkabilir miyim ?",
+      "button": "View Project"
+    }
+  ]
+  
