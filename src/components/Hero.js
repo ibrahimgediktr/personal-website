@@ -31,7 +31,6 @@ const HeroContainer = styled.div`
   height: 100vh;
   padding: 0rem 1rem;
   position: relative;
-  margin-top: -75px;
 `
 const HeroBg = styled.div`
   position: absolute;
