@@ -29,6 +29,7 @@ const Progress = styled.div`
   height: 25px;
   width: 100%;
   max-width: 300px;
+  font-size:0.85rem;
 `
 
 const ProgressDone = styled.div`

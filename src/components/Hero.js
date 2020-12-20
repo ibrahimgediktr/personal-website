@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { Button } from "./styles/Button"
-import Image from "../assets/images/squares.jpg"
+import Image from "../assets/images/hero-bg-desktop.jpg"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 function Hero() {

@@ -44,7 +44,7 @@ function Header() {
 export default Header
 
 const Nav = styled.nav`
-  background: ${({ active }) => (active ? "#3399cc" : "transparent")};
+  background: ${({ active }) => (active ? "#23ab67" : "transparent")};
   position: fixed;
   top: 0;
   left: 0;
@@ -54,7 +54,7 @@ const Nav = styled.nav`
   align-items: center;
   padding: 0.5rem;
   z-index: 100;
-  height: 75px;
+  height: ${({ active }) => (active ? "61px" : "75px")};
 `
 
 const NavLink = styled(AnchorLink)`
@@ -62,6 +62,19 @@ const NavLink = styled(AnchorLink)`
   text-decoration: none;
   color: ${({ active }) => (active ? "#fff" : "#fff")};
   font-size: 1rem;
+  &::after{
+    margin-top:3px;
+    content:"";
+    display:block;
+    width:0;
+    height:2px;
+    background-color:#fff;
+    transition: width 0.32s;
+  }
+  &:hover::after{
+    width:100%;
+    transition:width 0.3s;
+  }
 `
 
 const NavMenu = styled.div`
@@ -76,8 +89,8 @@ const NavMenu = styled.div`
     position: absolute;
     top: ${({ click }) => (click ? "0%" : "-1000px")};
     opacity: 1;
-    transition: all 0.2s ease;
-    background: #3399cc;
+    transition: all 0.3s ease;
+    background: #23ab67;
   }
 `
 
@@ -87,11 +100,12 @@ const MobileIcon = styled.div`
     cursor: pointer;
     display: block;
     position: absolute;
-    top: 0;
+    top: -10px;
     right: 0;
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     z-index: 5;
+    transition:all 0.2s ease-in-out;
   }
 `
 

@@ -20,6 +20,7 @@ function Projects({id}) {
                 }
               }
             }
+            href
           }
         }
       }
@@ -40,7 +41,7 @@ function Projects({id}) {
             <TextWrap>
               <ProjectTitle>{item.node.name}</ProjectTitle>
             </TextWrap>
-            <Button to="/Projects" primary="true" round="true">
+            <Button to={item.node.href} primary="true" round="true" target="_blank">
               {item.node.button}
             </Button>
           </ProjectsInfo>

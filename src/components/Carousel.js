@@ -32,16 +32,16 @@ export default function Carousel() {
       <SwiperSlide>
         <ProgressBarLeft>
           <ProgressBarHeading>Development Skills</ProgressBarHeading>
-          <ProgressBar done="90" bgColor="#3399cc" title="HTML" />
-          <ProgressBar done="70" bgColor="#3399cc" title="SASS/CSS" />
-          <ProgressBar done="50" bgColor="#3399cc" title="Javascript" />
-          <ProgressBar done="45" bgColor="#3399cc" title="React JS" />
-          <ProgressBar done="40" bgColor="#3399cc" title="Python" />
+          <ProgressBar done="90" bgColor="#23ab67" title="HTML" />
+          <ProgressBar done="70" bgColor="#23ab67" title="SASS / CSS" />
+          <ProgressBar done="50" bgColor="#23ab67" title="Javascript" />
+          <ProgressBar done="45" bgColor="#23ab67" title="React JS" />
+          <ProgressBar done="40" bgColor="#23ab67" title="C# / ASP.NET" />
         </ProgressBarLeft>
         <ProgressBarRight>
-          <ProgressBarHeading>Languages Skills</ProgressBarHeading>
-          <ProgressBar done="100" bgColor="#3399cc" title="Turkish" />
-          <ProgressBar done="60" bgColor="#3399cc" title="English" />
+          <ProgressBarHeading>Language Skills</ProgressBarHeading>
+          <ProgressBar done="100" bgColor="#23ab67" title="Turkish" />
+          <ProgressBar done="60" bgColor="#23ab67" title="English" />
         </ProgressBarRight>
       </SwiperSlide>
 
@@ -109,13 +109,13 @@ const SwiperButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #3399cc;
+  color: #23AB67;
   font-weight: 700;
   animation: ${skimmy} 1.5s linear infinite;
 `
 
 const Arrow = styled(BsArrowLeft)`
-  color: #3399cc;
+  color: #23AB67;
   font-size: 3rem;
 `
 

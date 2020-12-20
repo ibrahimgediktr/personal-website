@@ -32,12 +32,12 @@ function Footer() {
           <ColHeading>Social Media</ColHeading>
           <ColContent>
             <SocialLink
-              to="https://www.instagram.com/ibrahimgediktr/"
+              to="/https://www.instagram.com/ibrahimgediktr/"
               target="_blank"
             >
               <Instagram />
             </SocialLink>
-            <SocialLink to="https://github.com/ibrahimgediktr" target="_blank">
+            <SocialLink to="/https://github.com/ibrahimgediktr" target="_blank">
               <GithubSquare />
             </SocialLink>
           </ColContent>
