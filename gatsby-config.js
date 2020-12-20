@@ -38,10 +38,17 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`PT Sans`],
+        fonts: [`Encode Sans`],
         display: "swap"
       }
     },
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -75,
+        duration:1200
+      }
+    }
   ]
 }

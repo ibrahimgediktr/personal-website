@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import { menuData } from "../data/MenuData"
 import { GrInstagram } from "react-icons/gr"
 import { FaGithubSquare } from "react-icons/fa"
@@ -89,7 +89,7 @@ const ColFooter = styled.span`
   color: #b2bec3;
 `
 
-const SocialLink = styled(Link)`
+const SocialLink = styled(AnchorLink)`
   text-decoration: none;
   color: #b2bec3;
 `
@@ -99,7 +99,7 @@ const ColContent = styled.div`
   flex-direction: column;
 `
 
-const ColLink = styled(Link)`
+const ColLink = styled(AnchorLink)`
   display: flex;
   flex-direction: column;
   padding-bottom: 8px;

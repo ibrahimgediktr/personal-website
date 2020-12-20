@@ -79,13 +79,15 @@ const AboutLeft = styled.div`
 `
 
 const AboutHeading = styled.h3`
-  font-size: 24px;
+  font-size: 1.8rem;
 `
 
 const AboutDescription = styled.p`
-  font-size: 18px;
+  font-size: 1rem;
   margin-top: 20px;
   color: rgba(0, 0, 0, 0.65);
+  letter-spacing:0.5px;
+  line-height:1.4;
 `
 
 const AboutRight = styled.div`
@@ -114,7 +116,7 @@ const SwiperButton = styled.div`
 
 const Arrow = styled(BsArrowLeft)`
   color: #3399cc;
-  font-size: 40px;
+  font-size: 3rem;
 `
 
 const SwiperButtonContent = styled.span`
@@ -123,7 +125,7 @@ const SwiperButtonContent = styled.span`
 `
 
 const ProgressBarHeading = styled.h3`
-  font-size: 24px;
+  font-size: 1.2rem;
   color: #4b4b4b;
   text-align: center;
 `

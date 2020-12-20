@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars, FaTimes } from "react-icons/fa"
 import { menuData } from "../data/MenuData"
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
+
 
 function Header() {
+
   const [click, setClick] = useState(false)
   const [scroll, setScroll] = useState(false)
 
@@ -29,11 +31,11 @@ function Header() {
         {click ? <Times active={scroll} /> : <Bars active={scroll} />}
       </MobileIcon>
       <NavMenu onClick={handleClick} click={click}>
-        {menuData.map((item, index) => (
-          <NavLink active={scroll} to={item.link} key={index}>
-            {item.title}
-          </NavLink>
-        ))}
+          {menuData.map((item, index) => (
+            <NavLink active={scroll} to={item.link} key={index}>
+              {item.title}
+            </NavLink>
+          ))}
       </NavMenu>
     </Nav>
   )
@@ -55,11 +57,11 @@ const Nav = styled.nav`
   height: 75px;
 `
 
-const NavLink = styled(Link)`
+const NavLink = styled(AnchorLink)`
   padding: 20px 15px;
   text-decoration: none;
   color: ${({ active }) => (active ? "#fff" : "#fff")};
-  font-size: 1.2rem;
+  font-size: 1rem;
 `
 
 const NavMenu = styled.div`

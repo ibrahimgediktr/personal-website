@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Button } from "./styles/Button"
 import Image from "../assets/images/squares.jpg"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 function Hero() {
   return (
@@ -14,7 +15,9 @@ function Hero() {
         <HeroItems>
           <HeroH1>Halil Ibrahim Gedik</HeroH1>
           <HeroP>Jr. Front-end Developer</HeroP>
-          <Button primary="true">See My Projects</Button>
+          <HeroLink to="/#projects">
+            <Button primary="true">See My Projects</Button>
+          </HeroLink>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
@@ -71,15 +74,19 @@ const HeroItems = styled.div`
   line-height: 1.1;
 `
 const HeroH1 = styled.h1`
-  font-size: clamp(1.5rem, 6vw, 3.6rem);
+  font-size: clamp(1.5rem, 6vw, 2.4rem);
   margin-bottom: 1rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   padding: 0 1rem;
   text-align: center;
 `
 const HeroP = styled.p`
-  font-size: clamp(1rem, 3vw, 2.8rem);
+  font-size: clamp(1rem, 3vw, 1.4rem);
   margin-bottom: 2rem;
   letter-spacing: 1px;
   text-align: center;
+`
+
+const HeroLink = styled(AnchorLink)`
+  text-decoration: none;
 `
