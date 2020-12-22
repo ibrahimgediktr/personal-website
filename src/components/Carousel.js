@@ -44,8 +44,6 @@ export default function Carousel() {
           <ProgressBar done="60" bgColor="#23ab67" title="English" />
         </ProgressBarRight>
       </SwiperSlide>
-
-      <SwiperSlide></SwiperSlide>
     </Swiper>
   )
 }

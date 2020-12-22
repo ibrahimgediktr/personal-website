@@ -1,8 +1,24 @@
 module.exports = {
   siteMetadata: {
     title: `Halil Ibrahim Gedik`,
-    description: `Halil Ibrahim Gedik`,
-    author: `@gatsbyjs`
+    slogan: "Design and Code",
+    description: `Frontend Web Developer Halil Ibrahim Gedik`,
+    author: `@ibrahimgedik`,
+    url: "ibrahimgedik.tech",
+    socailLinks: {
+      vsco: {
+        name: 'VSCO',
+        url: 'https://vsco.co/ibrahimgedik/gallery'
+      },
+      instagram: {
+        name: 'Instagram',
+        url: 'https://instagram.com/ibrahimgediktr'
+      },
+      github: {
+        name: 'Github',
+        url: 'https://github.com/ibrahimgediktr'
+      },
+    }
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Halil Ibrahim Gedik`,
+        short_name: `HIG`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -47,7 +63,7 @@ module.exports = {
       resolve: "gatsby-plugin-anchor-links",
       options: {
         offset: -60,
-        duration:1200
+        duration: 1200
       }
     }
   ]

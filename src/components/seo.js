@@ -17,8 +17,10 @@ function SEO({ description, lang, meta, title }) {
         site {
           siteMetadata {
             title
+            slogan
             description
             author
+            url
           }
         }
       }
