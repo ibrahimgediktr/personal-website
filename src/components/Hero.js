@@ -13,7 +13,7 @@ function Hero() {
       </HeroBg>
       <HeroContent>
         <HeroItems>
-          <HeroH1>Halil Ibrahim Gedik</HeroH1>
+          <HeroH1>İbrahim Gedik</HeroH1>
           <HeroP>Jr. Front-end Developer</HeroP>
           <HeroLink to="/#projects">
             <Button primary="true">See My Projects</Button>

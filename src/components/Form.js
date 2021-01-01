@@ -1,52 +1,36 @@
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
-import { useAlert } from "react-alert"
+import { MdError} from 'react-icons/md'
+import { FaCheckCircle} from 'react-icons/fa'
 
-function Form() {
-  const alert = useAlert()
 
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    textarea: "",
-  })
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&")
+class Form extends React.Component {
+  constructor(props){
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status : ""
+    };
   }
 
-  const handleChange = e => {
-    setFormState({
-      ...formState,
-      [e.target.name]: e.target.value,
-    })
+  sendMessage = () =>{
+    this.recaptcha.execute()
   }
 
-  const handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...formState }),
-    })
-      .then(() => alert.success("Your message has been successfully sent."))
-      .catch(error => alert.error(error))
-    e.preventDefault()
-  }
+  render() {
+  const {status} = this.state
 
   return (
     <FormContainer
-      onSubmit={handleSubmit}
-      name="contact"
+      className="g-recaptch"
+      onSubmit={this.submitForm}
       method="post"
-      data-netlify="true"
+      action="https://formspree.io/f/mleookny"
     >
       <Input name="form-name" type="hidden" value="contact" />
       <FormControl>
         <Input
-          onChange={handleChange}
-          value={formState.name}
           name="name"
           placeholder="Your Full Name"
           type="text"
@@ -55,8 +39,6 @@ function Form() {
       </FormControl>
       <FormControl>
         <Input
-          onChange={handleChange}
-          value={formState.email}
           name="email"
           placeholder="Your Email"
           type="email"
@@ -65,26 +47,47 @@ function Form() {
       </FormControl>
       <FormControl>
         <TextArea
-          onChange={handleChange}
-          value={formState.textarea}
           name="textarea"
           placeholder="Subject"
           type="text"
           required
         />
       </FormControl>
-      <FormButton
-        onClick={() => {
-          
-        }}
-      >
-        Send
-      </FormButton>
+      {status === 'SUCCESS' ? 
+      <FormAlert>
+        <CheckIcon />
+        Thanks!, Your message has been successfully sent.
+        </FormAlert> : <FormButton>Send</FormButton> }
+      {status === 'ERROR' && 
+      <FormAlert>
+        <ErrorIcon />
+        Ooops! There was an error
+        </FormAlert> }
     </FormContainer>
-  )
+   )
+  }
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
 }
 
 export default Form
+
 
 const FormContainer = styled.form`
   width: 100%;
@@ -129,6 +132,17 @@ const TextArea = styled.textarea`
     outline: 0 none;
   }
 `
+const FormAlert = styled.p`
+  margin-top:10px;
+  color:#4b4b4b;
+  font-size:16px;
+  display:flex;
+  align-items:center;
+  @media screen and (max-width:576px){
+    font-size:14.4px;
+  }
+`
+
 const FormButton = styled.button`
   margin-top: 10px;
   background: #23ab67;
@@ -146,4 +160,15 @@ const FormButton = styled.button`
     background-color: #05954d;
     color: #fff;
   }
+`
+
+const CheckIcon = styled(FaCheckCircle)`
+  margin-right:6px;
+  font-size:30px;
+  color:#23ab67;
+`
+const ErrorIcon = styled(MdError)`
+  color:#e74c3c;
+  margin-right:6px;
+  font-size:30px;
 `

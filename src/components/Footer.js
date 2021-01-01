@@ -15,7 +15,7 @@ function Footer() {
             <ColDescription>
               This website was made with Gastby Js.
             </ColDescription>
-            <ColFooter>© Halil Ibrahim Gedik 2020</ColFooter>
+            <ColFooter>© İbrahim Gedik 2020</ColFooter>
           </ColContent>
         </Col>
         <Col>
@@ -32,12 +32,12 @@ function Footer() {
           <ColHeading>Social Media</ColHeading>
           <ColContent>
             <SocialLink
-              to="/https://www.instagram.com/ibrahimgediktr/"
+              href="https://www.instagram.com/ibrahimgediktr/"
               target="_blank"
             >
               <Instagram />
             </SocialLink>
-            <SocialLink to="/https://github.com/ibrahimgediktr" target="_blank">
+            <SocialLink href="https://github.com/ibrahimgediktr" target="_blank">
               <GithubSquare />
             </SocialLink>
           </ColContent>
@@ -89,7 +89,7 @@ const ColFooter = styled.span`
   color: #b2bec3;
 `
 
-const SocialLink = styled(AnchorLink)`
+const SocialLink = styled.a`
   text-decoration: none;
   color: #b2bec3;
 `
@@ -97,6 +97,10 @@ const SocialLink = styled(AnchorLink)`
 const ColContent = styled.div`
   display: flex;
   flex-direction: column;
+  font-size:1rem;
+  @media screen and (max-width:576px){
+    font-size:0.95rem;
+  }
 `
 
 const ColLink = styled(AnchorLink)`

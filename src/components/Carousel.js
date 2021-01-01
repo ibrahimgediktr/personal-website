@@ -8,11 +8,12 @@ import ProgressBar from "../components/ProgressBar"
 
 
 export default function Carousel() {
+
   return (
-    <Swiper spaceBetween={50} slidesPerView={1}>
+    <Swiper spaceBetween={50} slidesPerView={1}  >
       <SwiperSlide>
         <AboutLeft>
-          <AboutHeading>Hi,I'm Ibrahim</AboutHeading>
+          <AboutHeading>Hi,I'm İbrahim</AboutHeading>
           <AboutDescription>
             I'm Junior Front-end Web Developer.I'm a student of Management
             Information Systems in Turkey I'm interested in Web development
@@ -36,7 +37,7 @@ export default function Carousel() {
           <ProgressBar done="70" bgColor="#23ab67" title="SASS / CSS" />
           <ProgressBar done="50" bgColor="#23ab67" title="Javascript" />
           <ProgressBar done="45" bgColor="#23ab67" title="React JS" />
-          <ProgressBar done="40" bgColor="#23ab67" title="C# / ASP.NET" />
+          <ProgressBar done="40" bgColor="#23ab67" title="Webflow" />
         </ProgressBarLeft>
         <ProgressBarRight>
           <ProgressBarHeading>Language Skills</ProgressBarHeading>

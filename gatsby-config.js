@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Halil Ibrahim Gedik`,
-    slogan: "Design and Code",
-    description: `Frontend Web Developer Halil Ibrahim Gedik`,
-    author: `@ibrahimgedik`,
     url: "ibrahimgedik.tech",
+    title: `İbrahim Gedik`,
+    slogan: "Frontend World",
+    description: `Frontend Web Developer İbrahim Gedik`,
+    author: `@ibrahimgedik`,
     socailLinks: {
       vsco: {
         name: 'VSCO',
@@ -34,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Halil Ibrahim Gedik`,
-        short_name: `HIG`,
+        name: `İbrahim Gedik`,
+        short_name: `İG`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,

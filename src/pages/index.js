@@ -5,19 +5,14 @@ import Hero from "../components/Hero"
 import About from "../components/About"
 import Projects from "../components/Projects"
 import Contact from "../components/Contact"
-import { transitions, positions, Provider as AlertProvider } from "react-alert"
-import AlertTemplate from 'react-alert-template-basic'
-
-const options = {
-    position: positions.BOTTOM_RIGHT,
-    timeout:4000,
-    offset:'20px',
-    transition:transitions.SCALE
-}
+import {Helmet} from 'react-helmet'
 
 
 const IndexPage = () => (
-  <AlertProvider template={AlertTemplate} {...options}>
+  <>
+  <Helmet>
+
+  </Helmet>
     <Layout>
       <SEO title="Home" />
       <Hero id="hero" />
@@ -25,7 +20,7 @@ const IndexPage = () => (
       <Projects id="projects" />
       <Contact id="contact" />
     </Layout>
-  </AlertProvider>
+  </>
 )
 
 export default IndexPage

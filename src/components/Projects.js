@@ -1,8 +1,11 @@
 import React from "react"
-import styled from "styled-components"
+import styled, {keyframes} from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Button } from "./styles/Button"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { BsArrowLeft } from "react-icons/bs"
+
+import 'swiper/swiper.scss'
 
 function Projects({id}) {
   const data = useStaticQuery(graphql`
@@ -12,6 +15,7 @@ function Projects({id}) {
           node {
             alt
             button
+            description
             name
             img {
               childImageSharp {
@@ -26,26 +30,31 @@ function Projects({id}) {
       }
     }
   `)
-
   function getProjects(data) {
     const projectsArray = []
     data.allProjectsJson.edges.forEach((item, index) => {
       projectsArray.push(
-        <ProjectsCard key={index}>
-          <ProjectImg
+        <SwiperSlide key={index}>
+          <ProjectsCard>
+            <ProjectImage>
+            <ProjectImg
             src={item.node.img.childImageSharp.fluid.src}
             alt={item.node.alt}
             fluid={item.node.img.childImageSharp.fluid}
           />
+          <ProjectImgOverlay></ProjectImgOverlay>
+            </ProjectImage>
           <ProjectsInfo>
             <TextWrap>
               <ProjectTitle>{item.node.name}</ProjectTitle>
+              <ProjectDescription>{item.node.description}</ProjectDescription>
             </TextWrap>
-            <Button to={item.node.href} primary="true" round="true" target="_blank">
+            <ProjectButton href={item.node.href} primary="true" round="true" target="_blank">
               {item.node.button}
-            </Button>
+            </ProjectButton>
           </ProjectsInfo>
         </ProjectsCard>
+        </SwiperSlide>
       )
     })
     return projectsArray
@@ -54,53 +63,115 @@ function Projects({id}) {
   return (
     <ProjectsContainer id={id}>
       <ProjectsHeading>Projects</ProjectsHeading>
-      <ProjectsWrapper>{getProjects(data)}</ProjectsWrapper>
+      <ProjectsWrapper>
+        <Swiper
+        breakpoints={{
+          768: {
+            slidesPerView: 2,
+          },
+          1240: {
+            slidesPerView: 3,
+          }
+        }}
+        spaceBetween={30}
+        slidesPerView={1} 
+        >
+        {getProjects(data)}
+        </Swiper>
+      </ProjectsWrapper>
+      <SwiperButton>
+            <Arrow />
+            <SwiperButtonContent>Swipe</SwiperButtonContent>
+          </SwiperButton>
     </ProjectsContainer>
   )
 }
 
 export default Projects
 
+const skimmy = keyframes`
+    0%  {
+      transform:translate(0px)
+    }
+    50%{
+      transform:translate(-20px)
+    }
+    100% {
+      transform:translate(0)
+    }
+  `
+
 const ProjectsContainer = styled.div`
   padding: 2rem calc((100vw - 1300px) / 2);
-  background: #f7f4ff;
+  background: #EFECF7;
 `
 
 const ProjectsHeading = styled.h1`
   text-align: center;
-  margin-bottom: 2.5rem;
 `
 const ProjectsWrapper = styled.div`
-  padding: 0 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
+  display:flex;
+  justify-content:center;
+  align-items:center;
 `
 
 const ProjectsCard = styled.div`
-  width: 100%;
-  height: auto;
-  margin: 15px 15px;
+  position:relative;
+  width:100%;
+  padding-top:2rem; 
+  padding-right:5%;
+  padding-left:5%;
+`
 
-  @media screen and (max-width: 992px) {
-  }
+const ProjectImage = styled.div`
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
 `
 
 const ProjectImg = styled(Img)`
-  height: 100%;
+  position:absolute;
+  width:400px;
+  height: 222px;
   max-width: 100%;
-  border-radius: 15px;
-  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+`
 
-  &:hover {
+const ProjectImgOverlay = styled.div`
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  background: #000;
+  opacity:0;
+  border-radius:20px;
+  ${ProjectsCard}:hover &{
+    opacity:0.75;
+  }
+`
+
+const ProjectButton = styled.a`
+  display:none;
+  position:absolute;
+  top:40%;
+  background-color:#23AB67;
+  color:white;
+  text-decoration:none;
+  padding:10px 32px;
+  border-radius:20px;
+
+  ${ProjectsCard}:hover &{
+    display:flex;
   }
 `
 
 const ProjectsInfo = styled.div`
-  display: flex;
+  display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -109,6 +180,34 @@ const ProjectsInfo = styled.div`
 const TextWrap = styled.div`
   color: #4b4b4b;
   margin: 10px 0;
+  text-align:center;
 `
 
-const ProjectTitle = styled.div``
+const ProjectTitle = styled.h3`
+  text-align:center;
+`
+const ProjectDescription = styled.p`
+  margin-top:10px;
+  text-align:center;
+`
+const SwiperButton = styled.div`
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #23AB67;
+  font-weight: 700;
+  animation: ${skimmy} 1.5s linear infinite;
+`
+
+const Arrow = styled(BsArrowLeft)`
+  color: #23AB67;
+  font-size: 3rem;
+`
+
+const SwiperButtonContent = styled.span`
+  margin-left: 5px;
+  font-size: 22px;
+`
+
+
