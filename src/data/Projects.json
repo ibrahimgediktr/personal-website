@@ -7,6 +7,14 @@
     "href": "https://ibrahimgediktr.github.io/easybank-landing-page-master/"
   },
   {
+    "img": "../assets/images/login-page-dark-mode.png",
+    "alt": "Login Component Dark Mode",
+    "name": "Login Component Dark Mode",
+    "description": "A Codier.io Challenge",
+    "button": "View Project",
+    "href": "https://codier.io/creation/HJBqkyRpP"
+  },
+  {
     "img": "../assets/images/spotify-project.jpg",
     "alt": "Spotify Website Clone",
     "name": "Spotify Website UI Clone",
