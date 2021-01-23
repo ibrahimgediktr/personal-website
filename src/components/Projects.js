@@ -104,6 +104,7 @@ const skimmy = keyframes`
 const ProjectsContainer = styled.div`
   padding: 2rem calc((100vw - 1300px) / 2);
   background: #EFECF7;
+  user-select:none;
 `
 
 const ProjectsHeading = styled.h1`
