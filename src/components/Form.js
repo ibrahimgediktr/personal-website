@@ -30,34 +30,41 @@ class Form extends React.Component {
     >
       <Input name="form-name" type="hidden" value="contact" />
       <FormControl>
+        <Label for="name">Your Full Name</Label>
         <Input
           name="name"
           placeholder="Your Full Name"
           type="text"
           required
+          aria-label="Name"
+
         />
       </FormControl>
       <FormControl>
+      <Label for="email">Your Email</Label>
         <Input
           name="email"
           placeholder="Your Email"
           type="email"
           required
+          aria-label="Email"
         />
       </FormControl>
       <FormControl>
+      <Label for="textarea">Subject</Label>
         <TextArea
           name="textarea"
           placeholder="Subject"
           type="text"
           required
+          aria-label="Text-area"
         />
       </FormControl>
       {status === 'SUCCESS' ? 
       <FormAlert>
         <CheckIcon />
         Thanks!, Your message has been successfully sent.
-        </FormAlert> : <FormButton>Send</FormButton> }
+        </FormAlert> : <FormButton aria-label="Form Send Button">Send</FormButton> }
       {status === 'ERROR' && 
       <FormAlert>
         <ErrorIcon />
@@ -102,9 +109,19 @@ const FormControl = styled.div`
   width: 100%;
 `
 
+const Label = styled.label`
+  color:#4b4b4b;
+  margin-left:12px;
+  font-size:16px ;
+  @media screen and (max-width:768px){
+    font-size:14.4px;
+  }
+`
+
 const Input = styled.input`
   width: 100%;
   height: 40px;
+  margin-top:5px;
   margin-bottom: 15px;
   padding-left: 15px;
   font-size: 14px;
@@ -121,6 +138,7 @@ const TextArea = styled.textarea`
   resize: none;
   width: 100%;
   height: 150px;
+  margin-top:5px;
   padding-left: 15px;
   padding-top: 15px;
   font-size: 1rem;

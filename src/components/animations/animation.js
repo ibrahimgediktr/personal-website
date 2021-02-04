@@ -33,5 +33,5 @@ export const fadeInDown = {
 
 
 export const transition = {
-    duration:1.75
+    duration:1
 }

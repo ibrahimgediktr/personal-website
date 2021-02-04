@@ -58,6 +58,7 @@ function Projects({ id }) {
                 primary="true"
                 round="true"
                 target="_blank"
+                aria-label="View Project Button"
               >
                 {item.node.button}
               </ProjectButton>

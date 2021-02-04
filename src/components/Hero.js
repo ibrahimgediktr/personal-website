@@ -43,7 +43,7 @@ function Hero() {
             variants={fadeInDown}
             transition={transition}
           >
-            <Button href="/#projects" primary="true">
+            <Button aria-label="See My Projects Button" href="/#projects" primary="true">
               See My Projects
             </Button>
           </HeroLink>

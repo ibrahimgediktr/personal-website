@@ -35,6 +35,7 @@ function Footer() {
               rel="noreferrer"
               href="https://www.instagram.com/ibrahimgediktr/"
               target="_blank"
+              aria-label="My Instragram Profile"
             >
               <Instagram />
             </SocialLink>
@@ -42,6 +43,7 @@ function Footer() {
               href="https://github.com/ibrahimgediktr"
               target="_blank"
               rel="noreferrer"
+              aria-label="My Github Profile"
             >
               <GithubSquare />
             </SocialLink>
