@@ -218,6 +218,8 @@
     transition: 300ms opacity;
     transform: translate3d(0, 0, 0);
     z-index: 10;
+    bottom:0px !important;
+
   }
   .swiper-pagination.swiper-pagination-hidden {
     opacity: 0;
@@ -258,8 +260,8 @@
     transform: scale(0.33);
   }
   .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     display: inline-block;
     border-radius: 100%;
     background: #000;
@@ -279,7 +281,7 @@
   }
   .swiper-pagination-bullet-active {
     opacity: 1;
-    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+    background:#23ab67 !important;;
   }
   .swiper-container-vertical > .swiper-pagination-bullets {
     right: 10px;

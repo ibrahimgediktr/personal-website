@@ -3,6 +3,13 @@ import styled from "styled-components"
 import { Button } from "./styles/Button"
 import Image from "../assets/images/hero-bg-desktop.jpg"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { motion } from "framer-motion"
+import {
+  fadeInLeft,
+  fadeInRight,
+  fadeInDown,
+  transition,
+} from "./animations/animation"
 
 function Hero() {
   return (
@@ -13,10 +20,32 @@ function Hero() {
       </HeroBg>
       <HeroContent>
         <HeroItems>
-          <HeroH1>İbrahim Gedik</HeroH1>
-          <HeroP>Jr. Front-end Developer</HeroP>
-          <HeroLink to="/#projects">
-            <Button primary="true">See My Projects</Button>
+          <HeroH1
+            initial="out"
+            animate="in"
+            variants={fadeInLeft}
+            transition={transition}
+          >
+            İbrahim Gedik
+          </HeroH1>
+          <HeroP
+            initial="out"
+            animate="in"
+            variants={fadeInRight}
+            transition={transition}
+          >
+            Jr. Front-end Developer
+          </HeroP>
+          <HeroLink
+            to="/#projects"
+            initial="out"
+            animate="in"
+            variants={fadeInDown}
+            transition={transition}
+          >
+            <Button href="/#projects" primary="true">
+              See My Projects
+            </Button>
           </HeroLink>
         </HeroItems>
       </HeroContent>
@@ -73,14 +102,14 @@ const HeroItems = styled.div`
   color: #fff;
   line-height: 1.1;
 `
-const HeroH1 = styled.h1`
+const HeroH1 = styled(motion.h1)`
   font-size: clamp(1.5rem, 6vw, 2.4rem);
   margin-bottom: 1rem;
   letter-spacing: 2px;
   padding: 0 1rem;
   text-align: center;
 `
-const HeroP = styled.p`
+const HeroP = styled(motion.p)`
   font-size: clamp(1rem, 3vw, 1.4rem);
   margin-bottom: 2rem;
   letter-spacing: 1px;

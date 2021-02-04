@@ -7,6 +7,30 @@
     "href": "https://ibrahimgediktr.github.io/easybank-landing-page-master/"
   },
   {
+    "img": "../assets/images/room-homapage-master.png",
+    "alt": "Room Homepage Master",
+    "name": "Room Homepage Master",
+    "description": "A Frontend Mentor Challenge",
+    "button": "View Project",
+    "href": "https://room-homepage-master-lxnva5wub.vercel.app/"
+  },
+  {
+    "img": "../assets/images/sokaga-cikabilirmiyim.png",
+    "alt": "Sokağa Çıkabilir miyim ?",
+    "name": "Sokağa Çıkabilir miyim ?",
+    "description": "The story of an algorithm that causes confusion.",
+    "button": "View Project",
+    "href": "https://sokaga-cikabilirmiyim-7etvxv1pe.vercel.app/"
+  },
+  {
+    "img": "../assets/images/rest-countries-api.png",
+    "alt": "Rest Countries - Next JS",
+    "name": "Rest Countries - Next JS",
+    "description": "A Country app that I developed using Next JS and Rest Countries API",
+    "button": "View Project",
+    "href": "https://rest-countries-nextjs.netlify.app/"
+  },
+  {
     "img": "../assets/images/login-page-dark-mode.png",
     "alt": "Login Component Dark Mode",
     "name": "Login Component Dark Mode",
@@ -22,14 +46,7 @@
     "button": "View Project",
     "href": "https://ibrahimgediktr.github.io/spotify-website-clone/"
   },
-  {
-    "img": "../assets/images/room-homapage-master.png",
-    "alt": "Room Homepage Master",
-    "name": "Room Homepage Master",
-    "description": "A Frontend Mentor Challenge",
-    "button": "View Project",
-    "href": "https://room-homepage-master-lxnva5wub.vercel.app/"
-  },
+  
   {
     "img": "../assets/images/netflix-website-clone.png",
     "alt": "Netflix Website Frontend Clone",
@@ -61,13 +78,5 @@
     "description": "A Frontend Mentor Challenge",
     "button": "View Project",
     "href": "https://faq-accordion-card-challenge.vercel.app/"
-  },
-  {
-    "img": "../assets/images/sokaga-cikabilirmiyim.png",
-    "alt": "Sokağa Çıkabilir miyim ?",
-    "name": "Sokağa Çıkabilir miyim ?",
-    "description": "The story of an algorithm that causes confusion.",
-    "button": "View Project",
-    "href": "https://sokaga-cikabilirmiyim-7etvxv1pe.vercel.app/"
   }
 ]
