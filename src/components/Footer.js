@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { menuData } from "../data/MenuData"
 import { GrInstagram } from "react-icons/gr"
 import { FaGithubSquare } from "react-icons/fa"
@@ -32,12 +32,17 @@ function Footer() {
           <ColHeading>Social Media</ColHeading>
           <ColContent>
             <SocialLink
+              rel="noreferrer"
               href="https://www.instagram.com/ibrahimgediktr/"
               target="_blank"
             >
               <Instagram />
             </SocialLink>
-            <SocialLink href="https://github.com/ibrahimgediktr" target="_blank">
+            <SocialLink
+              href="https://github.com/ibrahimgediktr"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GithubSquare />
             </SocialLink>
           </ColContent>
@@ -97,9 +102,9 @@ const SocialLink = styled.a`
 const ColContent = styled.div`
   display: flex;
   flex-direction: column;
-  font-size:1rem;
-  @media screen and (max-width:576px){
-    font-size:0.95rem;
+  font-size: 1rem;
+  @media screen and (max-width: 576px) {
+    font-size: 0.95rem;
   }
 `
 

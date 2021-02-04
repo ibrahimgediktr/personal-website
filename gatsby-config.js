@@ -6,10 +6,6 @@ module.exports = {
     description: `Frontend Web Developer İbrahim Gedik`,
     author: `@ibrahimgedik`,
     socailLinks: {
-      vsco: {
-        name: 'VSCO',
-        url: 'https://vsco.co/ibrahimgedik/gallery'
-      },
       instagram: {
         name: 'Instagram',
         url: 'https://instagram.com/ibrahimgediktr'
@@ -21,6 +17,20 @@ module.exports = {
     }
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://ibrahimgedik.tech`,
+      },
+    },
+    {
+      resolve:'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://ibrahimgedik.tech',
+        sitemap: 'https://ibrahimgedik.tech/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

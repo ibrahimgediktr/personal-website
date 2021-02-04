@@ -5,7 +5,7 @@ export const fadeInLeft = {
     },
     out: {
         opacity:0,
-        x:500,
+        x:100,
     }
 }
 
@@ -16,7 +16,7 @@ export const fadeInRight = {
     },
     out: {
         opacity:0,
-        x:-500,
+        x:-100,
     }
 }
 
@@ -27,7 +27,7 @@ export const fadeInDown = {
     },
     out: {
         opacity:0,
-        y:-500,
+        y:-100,
     }
 }
 

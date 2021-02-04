@@ -38,7 +38,7 @@ export default function HTML(props) {
               width="150" 
               height="150"
            />
-        </div>
+           </div>
         <div
           key={`body`}
           id="___gatsby"

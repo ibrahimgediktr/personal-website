@@ -53,6 +53,7 @@ function Projects({ id }) {
                 <ProjectDescription>{item.node.description}</ProjectDescription>
               </TextWrap>
               <ProjectButton
+                rel="noreferrer"
                 href={item.node.href}
                 primary="true"
                 round="true"
