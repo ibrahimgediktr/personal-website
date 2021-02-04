@@ -1,17 +1,15 @@
-import React, { lazy, Suspense } from "react"
+import React from "react"
+import loadable from "@loadable/component"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
-// import About from "../components/About"
-// import Projects from "../components/Projects"
-// import Contact from "../components/Contact"
 import { Helmet } from "react-helmet"
 import { AnimatePresence } from "framer-motion"
 import LoaderSVG from "../images/loading.gif"
 
-const About = lazy(() => import("../components/About"))
-const Projects = lazy(() => import("../components/Projects"))
-const Contact = lazy(() => import("../components/Contact"))
+const About = loadable(() => import("../components/About"))
+const Projects = loadable(() => import("../components/Projects"))
+const Contact = loadable(() => import("../components/Contact"))
 
 function IndexPage() {
   return (
@@ -22,20 +20,7 @@ function IndexPage() {
       <Layout>
         <SEO title="Home" />
         <Hero id="hero" />
-        <Suspense fallback={
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <img src={LoaderSVG} alt="Loader SVG" width="150" height="150"></img> 
-            </div>
-          }>
-          <About id="about" />
-        </Suspense>
-        <Suspense
+        <About
           fallback={
             <div
               style={{
@@ -44,13 +29,17 @@ function IndexPage() {
                 alignItems: "center",
               }}
             >
-              <img src={LoaderSVG} alt="Loader SVG" width="150" height="150"></img> 
+              <img
+                src={LoaderSVG}
+                alt="Loader SVG"
+                width="150"
+                height="150"
+              ></img>
             </div>
           }
-        >
-          <Projects id="projects" />
-        </Suspense>
-        <Suspense
+          id="about"
+        />
+        <Projects
           fallback={
             <div
               style={{
@@ -59,12 +48,35 @@ function IndexPage() {
                 alignItems: "center",
               }}
             >
-              <img src={LoaderSVG} alt="Loader SVG" width="150" height="150"></img> 
+              <img
+                src={LoaderSVG}
+                alt="Loader SVG"
+                width="150"
+                height="150"
+              ></img>
             </div>
           }
-        >
-          <Contact id="contact" />
-        </Suspense>
+          id="projects"
+        />
+        <Contact
+          fallback={
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <img
+                src={LoaderSVG}
+                alt="Loader SVG"
+                width="150"
+                height="150"
+              ></img>
+            </div>
+          }
+          id="contact"
+        />
       </Layout>
     </AnimatePresence>
   )
