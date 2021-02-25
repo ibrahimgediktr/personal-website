@@ -93,6 +93,7 @@ const HeroContent = styled.div`
   max-height: 100%;
   padding: 0rem calc((100vw - 1300px) / 2);
 `
+
 const HeroItems = styled.div`
   display: flex;
   flex-direction: column;

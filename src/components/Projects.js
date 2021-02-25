@@ -1,5 +1,5 @@
 import React from "react"
-import SwiperCore, { Pagination } from "swiper"
+import SwiperCore, { Pagination,Autoplay } from "swiper"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 
 import "swiper/swiper.scss"
 
-SwiperCore.use([Pagination])
+SwiperCore.use([Pagination,Autoplay])
 
 function Projects({ id }) {
   const data = useStaticQuery(graphql`
@@ -85,7 +85,10 @@ function Projects({ id }) {
           }}
           spaceBetween={30}
           slidesPerView={1}
-          pagination
+          pagination={{
+            clickable: true 
+          }}
+          autoplay={{ delay: 2000 }}
         >
           {getProjects(data)}
         </Swiper>
@@ -105,6 +108,7 @@ const ProjectsContainer = styled.div`
 
 const ProjectsHeading = styled.h1`
   text-align: center;
+  color:#4b4b4b;
 `
 const ProjectsWrapper = styled.div`
   display: flex;

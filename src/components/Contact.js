@@ -5,7 +5,7 @@ import Form from "../components/Form"
 function Contact({id}) {
   return (
     <ContactContainer id={id}>
-      <ContactHeading>Contact</ContactHeading>
+      <ContactHeading>Get in touch</ContactHeading>
       <ContactContent>
         <Form />
       </ContactContent>
@@ -22,6 +22,7 @@ const ContactContainer = styled.div`
 const ContactHeading = styled.h1`
   text-align: center;
   margin-bottom: 2.5rem;
+  color:#4b4b4b;
 `
 const ContactContent = styled.div`
   display: flex;

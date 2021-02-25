@@ -15,10 +15,10 @@ export default function Carousel() {
         <AboutLeft>
           <AboutHeading>Hi,I'm İbrahim</AboutHeading>
           <AboutDescription>
-            I'm Junior Front-end Web Developer.I'm a student of Management
+            I'm <span style={{fontWeight:"bolder"}}>Junior Front-end Web Developer</span>.I'm a student of Management
             Information Systems in Turkey I'm interested in Web development
             technologies.I'm also trying to improve myself in Front-end
-            Development.
+            Development.I'm currently learning <span style={{ color:"#f1c40f", textShadow:"0.5px 0px #bdc3c7", fontWeight:"bold", letterSpacing:"1.5px"}}>Javascript</span> and actively using <span style={{ color:"#3498db",textShadow:"0.5px 0px #bdc3c7", fontWeight:"bold", letterSpacing:"1.5px"}}>React.js</span> and <span style={{color:"#2ecc71", textShadow:"0.5px 0px #bdc3c7", fontWeight:"bold", letterSpacing:"1.5px"}}>Node.js</span> technologies. 
           </AboutDescription>
           <SwiperButton>
             <Arrow />
@@ -35,13 +35,14 @@ export default function Carousel() {
           <ProgressBarHeading>Development Skills</ProgressBarHeading>
           <ProgressBar done="90" bgColor="#23ab67" title="HTML" />
           <ProgressBar done="70" bgColor="#23ab67" title="SASS / CSS" />
-          <ProgressBar done="50" bgColor="#23ab67" title="Javascript" />
-          <ProgressBar done="35" bgColor="#23ab67" title="React JS" />
+          <ProgressBar done="35" bgColor="#23ab67" title="Javascript" />
+          <ProgressBar done="30" bgColor="#23ab67" title="React JS" />
+          <ProgressBar done="25" bgColor="#23ab67" title="Node JS" />
         </ProgressBarLeft>
         <ProgressBarRight>
           <ProgressBarHeading>Language Skills</ProgressBarHeading>
           <ProgressBar done="100" bgColor="#23ab67" title="Turkish" />
-          <ProgressBar done="60" bgColor="#23ab67" title="English" />
+          <ProgressBar done="50" bgColor="#23ab67" title="English" />
         </ProgressBarRight>
       </SwiperSlide>
     </Swiper>
