@@ -36,8 +36,8 @@ export default function Carousel() {
           <ProgressBar done="90" bgColor="#23ab67" title="HTML" />
           <ProgressBar done="70" bgColor="#23ab67" title="SASS / CSS" />
           <ProgressBar done="35" bgColor="#23ab67" title="Javascript" />
-          <ProgressBar done="30" bgColor="#23ab67" title="React JS" />
-          <ProgressBar done="25" bgColor="#23ab67" title="Node JS" />
+          <ProgressBar done="30" bgColor="#23ab67" title="React.js" />
+          <ProgressBar done="25" bgColor="#23ab67" title="Node.js" />
         </ProgressBarLeft>
         <ProgressBarRight>
           <ProgressBarHeading>Language Skills</ProgressBarHeading>

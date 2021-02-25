@@ -10,6 +10,9 @@ import {
   fadeInDown,
   transition,
 } from "./animations/animation"
+import { GrInstagram } from "react-icons/gr"
+import { FaGithubSquare } from "react-icons/fa"
+import { AiFillLinkedin } from "react-icons/ai"
 
 function Hero() {
   return (
@@ -43,12 +46,42 @@ function Hero() {
             variants={fadeInDown}
             transition={transition}
           >
-            <Button aria-label="See My Projects Button" href="/#projects" primary="true">
+            <Button
+              aria-label="See My Projects Button"
+              href="/#projects"
+              primary="true"
+            >
               See My Projects
             </Button>
           </HeroLink>
         </HeroItems>
       </HeroContent>
+      <HeroContentBottom>
+        <SocialLink
+          rel="noreferrer"
+          href="https://www.instagram.com/ibrahimgediktr/"
+          target="_blank"
+          aria-label="My Instragram Profile"
+        >
+          <Instagram />
+        </SocialLink>
+        <SocialLink
+          href="https://github.com/ibrahimgediktr"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="My Github Profile"
+        >
+          <GithubSquare />
+        </SocialLink>
+        <SocialLink
+          href="https://github.com/ibrahimgediktr"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="My Linkedin profile"
+        >
+          <LinkedinSquare />
+        </SocialLink>
+      </HeroContentBottom>
     </HeroContainer>
   )
 }
@@ -92,6 +125,35 @@ const HeroContent = styled.div`
   z-index: 4;
   max-height: 100%;
   padding: 0rem calc((100vw - 1300px) / 2);
+`
+
+const HeroContentBottom = styled.div`
+  position: absolute;
+  bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+`
+
+const SocialLink = styled.a`
+  text-decoration: none;
+  color: #b2bec3;
+ 
+`
+
+const Instagram = styled(GrInstagram)`
+  font-size: 1.8rem;
+  cursor: pointer;
+`
+const GithubSquare = styled(FaGithubSquare)`
+  font-size: 2rem;
+  cursor: pointer;
+  margin:0 8px;
+`
+const LinkedinSquare = styled(AiFillLinkedin)`
+  font-size: 2.1rem;
+  cursor: pointer;
 `
 
 const HeroItems = styled.div`
