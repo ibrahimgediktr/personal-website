@@ -58,6 +58,10 @@ function Hero() {
       </HeroContent>
       <HeroContentBottom>
         <SocialLink
+          initial="out"
+          animate="in"
+          variants={fadeInLeft}
+          transition={transition}
           rel="noreferrer"
           href="https://www.instagram.com/ibrahimgediktr/"
           target="_blank"
@@ -66,6 +70,10 @@ function Hero() {
           <Instagram />
         </SocialLink>
         <SocialLink
+          initial="out"
+          animate="in"
+          variants={fadeInDown}
+          transition={transition}
           href="https://github.com/ibrahimgediktr"
           target="_blank"
           rel="noreferrer"
@@ -74,7 +82,11 @@ function Hero() {
           <GithubSquare />
         </SocialLink>
         <SocialLink
-          href="https://github.com/ibrahimgediktr"
+          initial="out"
+          animate="in"
+          variants={fadeInRight}
+          transition={transition}
+          href="https://www.linkedin.com/in/ibrahimgedik/"
           target="_blank"
           rel="noreferrer"
           aria-label="My Linkedin profile"
@@ -129,17 +141,17 @@ const HeroContent = styled.div`
 
 const HeroContentBottom = styled.div`
   position: absolute;
-  bottom: 35px;
+  top: 65%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 `
 
-const SocialLink = styled.a`
+const SocialLink = styled(motion.a)`
   text-decoration: none;
   color: #b2bec3;
- 
+  margin-top: 20px;
 `
 
 const Instagram = styled(GrInstagram)`
@@ -149,10 +161,10 @@ const Instagram = styled(GrInstagram)`
 const GithubSquare = styled(FaGithubSquare)`
   font-size: 2rem;
   cursor: pointer;
-  margin:0 8px;
+  margin: 0 8px;
 `
 const LinkedinSquare = styled(AiFillLinkedin)`
-  font-size: 2.1rem;
+  font-size: 2.17rem;
   cursor: pointer;
 `
 

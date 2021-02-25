@@ -4,6 +4,8 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { menuData } from "../data/MenuData"
 import { GrInstagram } from "react-icons/gr"
 import { FaGithubSquare } from "react-icons/fa"
+import { AiFillLinkedin } from "react-icons/ai"
+
 
 function Footer() {
   return (
@@ -47,6 +49,14 @@ function Footer() {
             >
               <GithubSquare />
             </SocialLink>
+            <SocialLink
+          href="https://www.linkedin.com/in/ibrahimgedik/"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="My Linkedin profile"
+        >
+          <LinkedinSquare />
+        </SocialLink>
           </ColContent>
         </Col>
       </Row>
@@ -125,4 +135,10 @@ const Instagram = styled(GrInstagram)`
 const GithubSquare = styled(FaGithubSquare)`
   font-size: 1.8rem;
   cursor: pointer;
+`
+const LinkedinSquare = styled(AiFillLinkedin)`
+  font-size: 2.1rem;
+  cursor: pointer;
+  margin-left:-2.5px;
+  margin-top:7px;
 `
