@@ -33,14 +33,14 @@ function Footer() {
         <Col>
           <ColHeading>Social Media</ColHeading>
           <ColContent>
-            <SocialLink
+            {/* <SocialLink
               rel="noreferrer"
               href="https://www.instagram.com/ibrahimgediktr/"
               target="_blank"
               aria-label="My Instragram Profile"
             >
               <Instagram />
-            </SocialLink>
+            </SocialLink> */}
             <SocialLink
               href="https://github.com/ibrahimgediktr"
               target="_blank"
@@ -127,11 +127,11 @@ const ColLink = styled(AnchorLink)`
   text-decoration: none;
   color: #b2bec3;
 `
-const Instagram = styled(GrInstagram)`
-  font-size: 1.8rem;
-  cursor: pointer;
-  margin-bottom: 8px;
-`
+// const Instagram = styled(GrInstagram)`
+//   font-size: 1.8rem;
+//   cursor: pointer;
+//   margin-bottom: 8px;
+// `
 const GithubSquare = styled(FaGithubSquare)`
   font-size: 1.8rem;
   cursor: pointer;

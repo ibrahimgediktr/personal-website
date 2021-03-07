@@ -4,7 +4,47 @@
     "name": "Easybank Landing Page",
     "description": "A Frontend Mentor Challenge",
     "button": "View Project",
-    "href": "https://ibrahimgediktr.github.io/easybank-landing-page-master/"
+    "href": "https://ibrahimgediktr.github.io/easybank-landing-page-master/",
+    "tags": [{
+        "name": "GULP",
+        "bgColor": "#e74c3c",
+        "color": "#fff"
+      },
+      {
+        "name": "HTML",
+        "bgColor": "#e84118",
+        "color": "#fff"
+      },
+      {
+        "name": "SCSS",
+        "bgColor": "#ff7979",
+        "color": "#fff"
+      },
+      {
+        "name": "JS",
+        "bgColor": "#fbc531",
+        "color": "#2f3640"
+      }
+    ]
+  },
+  {
+    "img": "../assets/images/bookmarks-landing-page.png",
+    "alt": "React Landing Page",
+    "name": "React Landing Page",
+    "description": "A Frontend Mentor Challenge",
+    "button": "View Project",
+    "href": "https://bookmarks-react.netlify.app/",
+    "tags": [{
+        "name": "SCSS",
+        "bgColor": "#ff7979",
+        "color": "#fff"
+      },
+      {
+        "name": "REACT.JS",
+        "bgColor": "#3498db",
+        "color": "#fff"
+      }
+    ]
   },
   {
     "img": "../assets/images/room-homapage-master.png",
@@ -12,7 +52,28 @@
     "name": "Room Homepage Master",
     "description": "A Frontend Mentor Challenge",
     "button": "View Project",
-    "href": "https://room-homepage-master-lxnva5wub.vercel.app/"
+    "href": "https://room-homepage-master-lxnva5wub.vercel.app/",
+    "tags": [{
+        "name": "GULP",
+        "bgColor": "#e74c3c",
+        "color": "#fff"
+      },
+      {
+        "name": "HTML",
+        "bgColor": "#e84118",
+        "color": "#fff"
+      },
+      {
+        "name": "SCSS",
+        "bgColor": "#ff7979",
+        "color": "#fff"
+      },
+      {
+        "name": "JS",
+        "bgColor": "#fbc531",
+        "color": "#2f3640"
+      }
+    ]
   },
   {
     "img": "../assets/images/sokaga-cikabilirmiyim.png",
@@ -20,7 +81,23 @@
     "name": "Sokağa Çıkabilir miyim ?",
     "description": "The story of an algorithm that causes confusion.",
     "button": "View Project",
-    "href": "https://sokaga-cikabilirmiyim-7etvxv1pe.vercel.app/"
+    "href": "https://sokaga-cikabilirmiyim-7etvxv1pe.vercel.app/",
+    "tags": [{
+        "name": "HTML",
+        "bgColor": "#e84118",
+        "color": "#fff"
+      },
+      {
+        "name": "BOOTSTRAP",
+        "bgColor": "#9c88ff",
+        "color": "#fff"
+      },
+      {
+        "name": "JS",
+        "bgColor": "#fbc531",
+        "color": "#2f3640"
+      }
+    ]
   },
   {
     "img": "../assets/images/rest-countries-api.png",
@@ -28,7 +105,23 @@
     "name": "Rest Countries - Next JS",
     "description": "A Country app that I developed using Next JS and Rest Countries API",
     "button": "View Project",
-    "href": "https://rest-countries-nextjs.netlify.app/"
+    "href": "https://rest-countries-nextjs.netlify.app/",
+    "tags": [{
+        "name": "REACT.JS",
+        "bgColor": "#3498db",
+        "color": "#fff"
+      },
+      {
+        "name": "NEXT.JS",
+        "bgColor": "#2c3e50",
+        "color": "#fff"
+      },
+      {
+        "name": "STYLED COMPONENTS",
+        "bgColor": "#27ae60",
+        "color": "#fff"
+      }
+    ]
   },
   {
     "img": "../assets/images/login-page-dark-mode.png",
@@ -36,7 +129,28 @@
     "name": "Login Component Dark Mode",
     "description": "A Codier.io Challenge",
     "button": "View Project",
-    "href": "https://codier.io/creation/HJBqkyRpP"
+    "href": "https://codier.io/creation/HJBqkyRpP",
+    "tags": [{
+        "name": "GULP",
+        "bgColor": "#e74c3c",
+        "color": "#fff"
+      },
+      {
+        "name": "HTML",
+        "bgColor": "#e84118",
+        "color": "#fff"
+      },
+      {
+        "name": "SCSS",
+        "bgColor": "#ff7979",
+        "color": "#fff"
+      },
+      {
+        "name": "JS",
+        "bgColor": "#fbc531",
+        "color": "#2f3640"
+      }
+    ]
   },
   {
     "img": "../assets/images/spotify-project.jpg",
@@ -44,16 +158,48 @@
     "name": "Spotify Website UI Clone",
     "description": "Official website clone of Spotify using HTML,CSS and Javascript.",
     "button": "View Project",
-    "href": "https://ibrahimgediktr.github.io/spotify-website-clone/"
+    "href": "https://ibrahimgediktr.github.io/spotify-website-clone/",
+    "tags": [{
+        "name": "HTML",
+        "bgColor": "#e84118",
+        "color": "#fff"
+      },
+      {
+        "name": "CSS",
+        "bgColor": "#3498db",
+        "color": "#fff"
+      },
+      {
+        "name": "JS",
+        "bgColor": "#fbc531",
+        "color": "#2f3640"
+      }
+    ]
   },
-  
+
   {
     "img": "../assets/images/netflix-website-clone.png",
     "alt": "Netflix Website Frontend Clone",
     "name": "Netflix Website UI Clone",
     "description": "Official website clone of Netflix using React technology.",
     "button": "View Project",
-    "href": "https://netflix-website-frontend-clone.netlify.app/"
+    "href": "https://netflix-website-frontend-clone.netlify.app/",
+    "tags": [{
+        "name": "REACT.JS",
+        "bgColor": "#3498db",
+        "color": "#fff"
+      },
+      {
+        "name": "FIREBASE",
+        "bgColor": "#f1c40f",
+        "color": "#fff"
+      },
+      {
+        "name": "STYLED COMPONENTS",
+        "bgColor": "#27ae60",
+        "color": "#fff"
+      }
+    ]
   },
   {
     "img": "../assets/images/profile-card-component.png",
@@ -61,7 +207,18 @@
     "name": "Profile Card Component",
     "description": "A Frontend Mentor Challenge",
     "button": "View Project",
-    "href": "https://profile-card-component.ibrahimgedik.vercel.app/"
+    "href": "https://profile-card-component.ibrahimgedik.vercel.app/",
+    "tags": [{
+        "name": "HTML",
+        "bgColor": "#e84118",
+        "color": "#fff"
+      },
+      {
+        "name": "SCSS",
+        "bgColor": "#ff7979",
+        "color": "#fff"
+      }
+    ]
   },
   {
     "img": "../assets/images/github-finder.png",
@@ -69,7 +226,23 @@
     "name": "Github Finder",
     "description": "Search user and view repository using Github API.",
     "button": "View Project",
-    "href": "https://ibrahimgediktr.github.io/github-finder/"
+    "href": "https://ibrahimgediktr.github.io/github-finder/",
+    "tags": [{
+        "name": "HTML",
+        "bgColor": "#e84118",
+        "color": "#fff"
+      },
+      {
+        "name": "BOOTSTRAP",
+        "bgColor": "#9c88ff",
+        "color": "#fff"
+      },
+      {
+        "name": "JS",
+        "bgColor": "#fbc531",
+        "color": "#2f3640"
+      }
+    ]
   },
   {
     "img": "../assets/images/faq-accordion-card.png",
@@ -77,6 +250,22 @@
     "name": "FAQ Accordion Card",
     "description": "A Frontend Mentor Challenge",
     "button": "View Project",
-    "href": "https://faq-accordion-card-challenge.vercel.app/"
+    "href": "https://faq-accordion-card-challenge.vercel.app/",
+    "tags": [{
+        "name": "HTML",
+        "bgColor": "#e84118",
+        "color": "#fff"
+      },
+      {
+        "name": "SCSS",
+        "bgColor": "#ff7979",
+        "color": "#fff"
+      },
+      {
+        "name": "JS",
+        "bgColor": "#fbc531",
+        "color": "#2f3640"
+      }
+    ]
   }
 ]

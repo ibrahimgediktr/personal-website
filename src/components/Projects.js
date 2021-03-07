@@ -48,11 +48,7 @@ function Projects({ id }) {
               <ProjectImgOverlay></ProjectImgOverlay>
             </ProjectImage>
             <ProjectsInfo>
-              <TextWrap>
-                <ProjectTitle>{item.node.name}</ProjectTitle>
-                <ProjectDescription>{item.node.description}</ProjectDescription>
-              </TextWrap>
-              <ProjectButton
+            <ProjectButton
                 rel="noreferrer"
                 href={item.node.href}
                 primary="true"
@@ -62,6 +58,10 @@ function Projects({ id }) {
               >
                 {item.node.button}
               </ProjectButton>
+              <TextWrap>
+                <ProjectTitle>{item.node.name}</ProjectTitle>
+                <ProjectDescription>{item.node.description}</ProjectDescription>
+              </TextWrap>
             </ProjectsInfo>
           </ProjectsCard>
         </SwiperSlide>
@@ -123,7 +123,6 @@ const ProjectsCard = styled.div`
   padding-right: 5%;
   padding-left: 5%;
   padding-bottom: 2rem;
-
 `
 
 const ProjectImage = styled.div`
@@ -153,24 +152,24 @@ const ProjectImgOverlay = styled.div`
   background: #000;
   opacity: 0;
   border-radius: 20px;
-  ${ProjectsCard}:hover & {
+  /* ${ProjectsCard}:hover & {
     opacity: 0.75;
-  }
+  } */
 `
 
 const ProjectButton = styled.a`
-  display: none;
-  position: absolute;
-  top: 40%;
+  /* position: absolute; */
   background-color: #23ab67;
   color: white;
   text-decoration: none;
   padding: 10px 32px;
   border-radius: 20px;
-
-  ${ProjectsCard}:hover & {
+  display:flex;
+  margin-top:20px;
+  margin-bottom:5px;
+  /* ${ProjectsCard}:hover & {
     display: flex;
-  }
+  } */
 `
 
 const ProjectsInfo = styled.div`

@@ -57,7 +57,7 @@ function Hero() {
         </HeroItems>
       </HeroContent>
       <HeroContentBottom>
-        <SocialLink
+        {/* <SocialLink
           initial="out"
           animate="in"
           variants={fadeInLeft}
@@ -68,11 +68,11 @@ function Hero() {
           aria-label="My Instragram Profile"
         >
           <Instagram />
-        </SocialLink>
+        </SocialLink> */}
         <SocialLink
           initial="out"
           animate="in"
-          variants={fadeInDown}
+          variants={fadeInLeft}
           transition={transition}
           href="https://github.com/ibrahimgediktr"
           target="_blank"
@@ -154,14 +154,15 @@ const SocialLink = styled(motion.a)`
   margin-top: 20px;
 `
 
-const Instagram = styled(GrInstagram)`
-  font-size: 1.8rem;
-  cursor: pointer;
-`
+// const Instagram = styled(GrInstagram)`
+//   font-size: 1.8rem;
+//   cursor: pointer;
+// `
 const GithubSquare = styled(FaGithubSquare)`
   font-size: 2rem;
   cursor: pointer;
-  margin: 0 8px;
+  /* margin: 0 8px; */
+  margin-right:8px;
 `
 const LinkedinSquare = styled(AiFillLinkedin)`
   font-size: 2.17rem;
