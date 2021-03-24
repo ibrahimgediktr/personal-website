@@ -152,13 +152,9 @@ const ProjectImgOverlay = styled.div`
   background: #000;
   opacity: 0;
   border-radius: 20px;
-  /* ${ProjectsCard}:hover & {
-    opacity: 0.75;
-  } */
 `
 
 const ProjectButton = styled.a`
-  /* position: absolute; */
   background-color: #23ab67;
   color: white;
   text-decoration: none;
@@ -167,9 +163,9 @@ const ProjectButton = styled.a`
   display:flex;
   margin-top:20px;
   margin-bottom:5px;
-  /* ${ProjectsCard}:hover & {
-    display: flex;
-  } */
+  &:hover{
+    filter:brightness(1.1);
+  }
 `
 
 const ProjectsInfo = styled.div`
