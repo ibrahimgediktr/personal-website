@@ -18,7 +18,7 @@ function IndexPage() {
         <link rel="canonical" href="https://ibrahimgedik.tech" />
       </Helmet>
       <Layout>
-        <SEO title="Home" />
+        <SEO title="Frontend Developer" />
         <Hero id="hero" />
         <About
           fallback={

@@ -1,4 +1,42 @@
 [{
+    "img": "../assets/images/bookmarks-landing-page.png",
+    "alt": "React Landing Page",
+    "name": "React Landing Page",
+    "description": "A Frontend Mentor Challenge",
+    "button": "View Project",
+    "href": "https://bookmarks-react.netlify.app/",
+    "tags": [{
+        "name": "SCSS",
+        "bgColor": "#ff7979",
+        "color": "#fff"
+      },
+      {
+        "name": "REACT.JS",
+        "bgColor": "#3498db",
+        "color": "#fff"
+      }
+    ]
+  },
+  {
+    "img": "../assets/images/fylo-landing-page.png",
+    "alt": "Fylo Landing Page",
+    "name": "Fylo Landing Page",
+    "description": "A Frontend Mentor Challenge",
+    "button": "View Project",
+    "href": "https://fylo-landing-page-dark.netlify.app/",
+    "tags": [{
+        "name": "SCSS",
+        "bgColor": "#ff7979",
+        "color": "#fff"
+      },
+      {
+        "name": "REACT.JS",
+        "bgColor": "#3498db",
+        "color": "#fff"
+      }
+    ]
+  },
+  {
     "img": "../assets/images/easybank-landing-page.png",
     "alt": "Easybank Landing Page",
     "name": "Easybank Landing Page",
@@ -27,25 +65,7 @@
       }
     ]
   },
-  {
-    "img": "../assets/images/bookmarks-landing-page.png",
-    "alt": "React Landing Page",
-    "name": "React Landing Page",
-    "description": "A Frontend Mentor Challenge",
-    "button": "View Project",
-    "href": "https://bookmarks-react.netlify.app/",
-    "tags": [{
-        "name": "SCSS",
-        "bgColor": "#ff7979",
-        "color": "#fff"
-      },
-      {
-        "name": "REACT.JS",
-        "bgColor": "#3498db",
-        "color": "#fff"
-      }
-    ]
-  },
+
   {
     "img": "../assets/images/room-homapage-master.png",
     "alt": "Room Homepage Master",
