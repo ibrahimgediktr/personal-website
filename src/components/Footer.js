@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { menuData } from "../data/MenuData"
-import { GrInstagram } from "react-icons/gr"
 import { FaGithubSquare } from "react-icons/fa"
 import { AiFillLinkedin } from "react-icons/ai"
 
@@ -109,6 +108,10 @@ const ColFooter = styled.span`
 const SocialLink = styled.a`
   text-decoration: none;
   color: #b2bec3;
+  &:hover{
+    filter:brightness(1.2);
+    transition:filter 0.3s ease;
+  }
 `
 
 const ColContent = styled.div`
@@ -126,12 +129,11 @@ const ColLink = styled(AnchorLink)`
   padding-bottom: 8px;
   text-decoration: none;
   color: #b2bec3;
+  &:hover{
+    filter:brightness(1.2);
+    transition:filter 0.3s ease;
+  }
 `
-// const Instagram = styled(GrInstagram)`
-//   font-size: 1.8rem;
-//   cursor: pointer;
-//   margin-bottom: 8px;
-// `
 const GithubSquare = styled(FaGithubSquare)`
   font-size: 1.8rem;
   cursor: pointer;

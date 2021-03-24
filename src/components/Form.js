@@ -30,7 +30,7 @@ class Form extends React.Component {
     >
       <Input name="form-name" type="hidden" value="contact" />
       <FormControl>
-        <Label for="name">Your Full Name</Label>
+        <Label htmlFor="name">Your Full Name</Label>
         <Input
           name="name"
           placeholder="Your Full Name"
@@ -41,7 +41,7 @@ class Form extends React.Component {
         />
       </FormControl>
       <FormControl>
-      <Label for="email">Your Email</Label>
+      <Label htmlFor="email">Your Email</Label>
         <Input
           name="email"
           placeholder="Your Email"
@@ -51,7 +51,7 @@ class Form extends React.Component {
         />
       </FormControl>
       <FormControl>
-      <Label for="textarea">Subject</Label>
+      <Label htmlFor="textarea">Subject</Label>
         <TextArea
           name="textarea"
           placeholder="Subject"

@@ -10,7 +10,6 @@ import {
   fadeInDown,
   transition,
 } from "./animations/animation"
-import { GrInstagram } from "react-icons/gr"
 import { FaGithubSquare } from "react-icons/fa"
 import { AiFillLinkedin } from "react-icons/ai"
 
@@ -48,7 +47,7 @@ function Hero() {
           >
             <Button
               aria-label="See My Projects Button"
-              href="/#projects"
+              to="/#projects"
               primary="true"
             >
               See My Projects
@@ -57,18 +56,6 @@ function Hero() {
         </HeroItems>
       </HeroContent>
       <HeroContentBottom>
-        {/* <SocialLink
-          initial="out"
-          animate="in"
-          variants={fadeInLeft}
-          transition={transition}
-          rel="noreferrer"
-          href="https://www.instagram.com/ibrahimgediktr/"
-          target="_blank"
-          aria-label="My Instragram Profile"
-        >
-          <Instagram />
-        </SocialLink> */}
         <SocialLink
           initial="out"
           animate="in"
@@ -124,6 +111,7 @@ const ImageBg = styled.img`
   height: 100%;
   object-fit: cover;
   z-index: 2;
+  overflow:hidden;
 `
 
 const ImageOverlay = styled.div`
@@ -152,16 +140,15 @@ const SocialLink = styled(motion.a)`
   text-decoration: none;
   color: #b2bec3;
   margin-top: 20px;
+  &:hover{
+    filter:brightness(1.2);
+    transition:filter 0.3s ease;
+  }
 `
 
-// const Instagram = styled(GrInstagram)`
-//   font-size: 1.8rem;
-//   cursor: pointer;
-// `
 const GithubSquare = styled(FaGithubSquare)`
   font-size: 2rem;
   cursor: pointer;
-  /* margin: 0 8px; */
   margin-right:8px;
 `
 const LinkedinSquare = styled(AiFillLinkedin)`
