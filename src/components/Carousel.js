@@ -4,7 +4,7 @@ import styled, { keyframes } from "styled-components"
 import Image from "../assets/images/about-image.png"
 import "../assets/swiper/swiper-bundle.css"
 import { BsArrowLeft } from "react-icons/bs"
-import ProgressBar from "../components/ProgressBar"
+
 
 
 // Icons
@@ -106,22 +106,12 @@ export default function Carousel() {
             </SkillTags>
           </SkillTagsContainer>
         </SkillSectionLeft>
-
-        <ProgressBarRight>
-          <ProgressBarHeading>Language Skills</ProgressBarHeading>
-          <ProgressBarContainer>
-            <ProgressBar done="100" bgColor="#23ab67" title="Turkish" />
-            <ProgressBar done="50" bgColor="#23ab67" title="English" />
-          </ProgressBarContainer>
-        </ProgressBarRight>
       </SkillSectionContainer>
 
       </SwiperSlide>
     </Swiper>
   )
 }
-
-
 
 
 const skimmy = keyframes`
@@ -199,11 +189,10 @@ const SwiperButtonContent = styled.span`
 
 const SkillSectionContainer = styled.div`
   display:grid;
-  grid-template-columns:1fr 1fr;
-  align-items:start;
-  grid-gap:20px;
+  grid-template-columns:1fr;
+  grid-gap:50px;
   @media screen and (max-width:992px){
-    grid-template-columns:1fr;
+    grid-gap:30px;
   }
 `
 
@@ -212,7 +201,6 @@ const SkillSectionHeading = styled.h3`
   color: #4b4b4b;
   text-align: center;
   font-weight:bolder;
-  
 `
 
 const SkillSectionLeft = styled.div`
@@ -222,24 +210,26 @@ const SkillSectionLeft = styled.div`
   align-items: center;
   margin: 0 auto;
   position:relative;
-  width:60%;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     width: 100%;
   }
 `
 
 const SkillTagsContainer = styled.div`
   display:flex;
-  justify-content:center;
   flex-wrap:wrap;
-  align-items:flex-start;
+  align-items:center;
+  justify-content:center;
+  @media screen and (max-width:992px){
+    justify-content:center;
+  }
 `
 
 const SkillTags = styled.div`
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:10px;
+  padding:15px;
   border-radius:5px;
   margin:20px 8px 0px;
 `
@@ -247,32 +237,5 @@ const SkillTags = styled.div`
 const Span = styled.span`
   color:#fff;
   margin-left:3px;
-  font-size:15px;
-`
-
-const ProgressBarRight = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 300px;
-  margin: 0 auto;
-  width:100%;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    margin-top: 30px;
-  }
-`
-
-const ProgressBarHeading = styled.h3`
-  font-size: 1.2rem;
-  color: #4b4b4b;
-  text-align: center;
-  font-weight:bolder;
-  
-`
-
-const ProgressBarContainer = styled.div`
-  width:100%;
-  margin-top:10px;
+  font-size:16px;
 `
