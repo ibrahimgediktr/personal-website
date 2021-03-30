@@ -187,4 +187,5 @@ const ProjectTitle = styled.h3`
 const ProjectDescription = styled.p`
   margin-top: 10px;
   text-align: center;
+  margin-bottom: 10px;
 `

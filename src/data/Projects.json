@@ -2,7 +2,7 @@
     "img": "../assets/images/bookmarks-landing-page.png",
     "alt": "React Landing Page",
     "name": "React Landing Page",
-    "description": "A Frontend Mentor Challenge",
+    "description": "I coded the design prepared by Frontend Mentor. I used React, SASS, Framer-Motion technologies while developing this project",
     "button": "View Project",
     "href": "https://bookmarks-react.netlify.app/",
     "tags": [{
@@ -21,7 +21,7 @@
     "img": "../assets/images/fylo-landing-page.png",
     "alt": "Fylo Landing Page",
     "name": "Fylo Landing Page",
-    "description": "A Frontend Mentor Challenge",
+    "description": "I coded the design prepared by Frontend Mentor. I used SCSS, Gulp, AOS technologies while developing this project",
     "button": "View Project",
     "href": "https://fylo-landing-page-dark.netlify.app/",
     "tags": [{
@@ -40,7 +40,7 @@
     "img": "../assets/images/easybank-landing-page.png",
     "alt": "Easybank Landing Page",
     "name": "Easybank Landing Page",
-    "description": "A Frontend Mentor Challenge",
+    "description": "I coded the design prepared by Frontend Mentor. I used SCSS and Gulp technologies while developing this project",
     "button": "View Project",
     "href": "https://ibrahimgediktr.github.io/easybank-landing-page-master/",
     "tags": [{
@@ -70,7 +70,7 @@
     "img": "../assets/images/room-homapage-master.png",
     "alt": "Room Homepage Master",
     "name": "Room Homepage Master",
-    "description": "A Frontend Mentor Challenge",
+    "description": " I coded the design prepared by Frontend Mentor. I used React and SASS technologies while developing this project",
     "button": "View Project",
     "href": "https://room-homepage-master-lxnva5wub.vercel.app/",
     "tags": [{
@@ -123,7 +123,7 @@
     "img": "../assets/images/rest-countries-api.png",
     "alt": "Rest Countries - Next JS",
     "name": "Rest Countries - Next JS",
-    "description": "A Country app that I developed using Next JS and Rest Countries API",
+    "description": "A country app that I developed using next js and Rest Countries API, you can filter countries by name or region.",
     "button": "View Project",
     "href": "https://rest-countries-nextjs.netlify.app/",
     "tags": [{
@@ -176,7 +176,7 @@
     "img": "../assets/images/spotify-project.jpg",
     "alt": "Spotify Website Clone",
     "name": "Spotify Website UI Clone",
-    "description": "Official website clone of Spotify using HTML,CSS and Javascript.",
+    "description": "I coded Front-end clone of the Spotify website. I used HTML, CSS, Javascript technologies while developing this project",
     "button": "View Project",
     "href": "https://ibrahimgediktr.github.io/spotify-website-clone/",
     "tags": [{
@@ -201,7 +201,7 @@
     "img": "../assets/images/netflix-website-clone.png",
     "alt": "Netflix Website Frontend Clone",
     "name": "Netflix Website UI Clone",
-    "description": "Official website clone of Netflix using React technology.",
+    "description": "I coded Front-end clone of the Netflix website. I used React, Styled Components, Firebase technologies while developing this project",
     "button": "View Project",
     "href": "https://netflix-website-frontend-clone.netlify.app/",
     "tags": [{
@@ -225,7 +225,7 @@
     "img": "../assets/images/profile-card-component.png",
     "alt": "Profile Card Component",
     "name": "Profile Card Component",
-    "description": "A Frontend Mentor Challenge",
+    "description": "I coded the design prepared by Frontend Mentor. I used Gulp, SCSS technologies while developing this project",
     "button": "View Project",
     "href": "https://profile-card-component.ibrahimgedik.vercel.app/",
     "tags": [{
@@ -244,7 +244,7 @@
     "img": "../assets/images/github-finder.png",
     "alt": "Github Finder",
     "name": "Github Finder",
-    "description": "Search user and view repository using Github API.",
+    "description": "Github user profile search website. I used the Bootstrap as a CSS library while developing this project.",
     "button": "View Project",
     "href": "https://ibrahimgediktr.github.io/github-finder/",
     "tags": [{
@@ -268,7 +268,7 @@
     "img": "../assets/images/faq-accordion-card.png",
     "alt": "FAQ Accordion Card",
     "name": "FAQ Accordion Card",
-    "description": "A Frontend Mentor Challenge",
+    "description": " I coded the design prepared by Frontend Mentor. I used Gulp, SCSS technologies while developing this project",
     "button": "View Project",
     "href": "https://faq-accordion-card-challenge.vercel.app/",
     "tags": [{
